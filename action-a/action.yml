@@ -1,0 +1,17 @@
+name: "Hello Actions"
+description: "Alejandro Padilla"
+author: "alejandropadillavalderrama@gmail.cmo"
+
+inputs:
+  MY_NAME:
+    description: "Quién es esta chimbada parce"
+    required: true
+    default: "World"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "purple"
