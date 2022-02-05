@@ -1,2 +1,11 @@
 name: A workflow for my espectacular DevOps
 on: push
+jobs:
+  build:
+    name: Los que llegaron tarde hellou!, ¿Tienen guayabo?
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        with:
+          MY_NAME: "Zona T - 85"
